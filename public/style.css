@@ -1,0 +1,109 @@
+/* abolish serifs */
+body {font-family: arial,sans-serif;}
+
+/* size */
+.h100 {height: 100vh;}
+.w100 {width: 100vw;}
+.w50 {width: 50%;}
+
+/* margin */
+.m1 {margin: 0.5em;}
+.m2 {margin: 1em;}
+.m3 {margin: 2em;}
+.mr1 {margin-right: 0.5em;}
+
+/* padding */
+.p1 {padding: 1em;}
+.p2 {padding: 3em;}
+.p3 {padding: 3em;}
+
+/* flex container */
+.flex {
+  display: flex;
+  flex-wrap: wrap; /* wrap by default */
+}
+.flex.column {flex-direction: column;}
+.flex.row {flex-direction: row;}
+.flex.wrap {flex-wrap: wrap;}
+.flex.nowrap {flex-wrap: nowrap;}
+
+/* justify-content (think: flex-x, where x is the primary axis) */
+.flex.justify-center {justify-content: center;}
+.flex.justify-right {justify-content: left;}
+.flex.justify-left {justify-content: right;}
+.flex.justify-space-around {justify-content: space-around;}
+.flex.justify-space-between {justify-content: space-between;}
+.flex.justify-space-evenly {justify-content: space-evenly;}
+
+/* align-items (think: flex-y), where y is the secondary axis */
+.flex.align-items-center {align-items: center;}
+.flex.align-items-right {align-items: right;}
+.flex.align-items-left {align-items: left;}
+
+.flex.align-content-center {align-content: center;}
+.flex.align-content-space-around {align-content: space-around;}
+.flex.align-content-space-between {align-content: space-between;}
+.flex.align-content-space-evenly {align-content: space-evenly;}
+
+/* flex items */
+.flex .grow1 {flex-grow: 1;}
+.flex .grow2 {flex-grow: 2;}
+.flex .grow3 {flex-grow: 3;}
+.flex .grow4 {flex-grow: 4;}
+.flex .grow5 {flex-grow: 5;}
+
+/* text-align */
+.text-center {text-align: center;}
+.text-right {text-align: right;}
+.text-left {text-align: left;}
+
+/* colors */
+.red {color: #CF000F;}
+.orange {color: #EB6B56;}
+.yellow {color: #FFC153;}
+.green {color: #27AE60;}
+.blue {color: #47B39D;}
+.violet {color: #462446;}
+.black {color: #000000;}
+.white {color: #ffffff;}
+
+.bg-red {background-color: #CF000F;}
+.bg-orange {background-color: #EB6B56;}
+.bg-yellow {background-color: #FFC153;}
+.bg-green {background-color: #27AE60;}
+.bg-blue {background-color: #47B39D;}
+.bg-violet {background-color: #462446;}
+.bg-black {background-color: #000000;}
+.bg-white {background-color: #ffffff;}
+
+/* buttons */
+.btn {
+  border: none;
+  transition: all 0.75s ease;
+  outline: none;
+}
+.rounded {border-radius: 3px;}
+.btn.bg-blue:hover {background-color: #47A09D;}
+.btn.bg-red:hover {background-color: #AD000F;}
+
+/* inputs */
+.input {
+  border: 1px solid #CCCCCC;
+  transition: all 0.25s ease;
+  padding: 0.25em;
+}
+.input:focus {
+  outline: none;
+  box-shadow: 0 0 0.5pt 0.5pt #CCCCCC;
+}
+
+/* page-specific styles */
+
+img {
+  height: 100px;
+  width: 100px;
+}
+
+h1 {
+  color: burlywood;
+}
