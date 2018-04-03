@@ -11,8 +11,6 @@ const userNotFound = next => {
 router.use('/google', require('./oauth'));
 
 router.get('/me', (req, res, next) => {
-  console.log('USER: ', req.user);
-  console.log('SESSION: ', req.session);
   if (!req.user) {
     userNotFound(next);
   } else {
