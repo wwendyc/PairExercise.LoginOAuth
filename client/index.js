@@ -18,6 +18,7 @@ const Main = withRouter(class extends Component {
     return (
       <Switch>
         <Route path='/home' component={UserPage} />
+        {/* <Route path='/home' component={UserPage} /> */}
         <Route component={Login} />
       </Switch>
     )
